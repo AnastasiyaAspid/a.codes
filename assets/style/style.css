@@ -419,7 +419,7 @@ box-shadow: 0 0 30px 5px var(--color-white);
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .me__title {
   margin-bottom: 15px;
@@ -686,7 +686,9 @@ box-shadow: 0 0 30px 5px var(--color-white);
     height: 100%;
     padding: 150px 0 80px;
   }
-
+  .me__wrapper {
+    margin-bottom: 40px;
+  }
   .card__list {
     grid-template-columns: repeat(3, 1fr);
   }
