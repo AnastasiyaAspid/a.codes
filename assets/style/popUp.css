@@ -1,0 +1,265 @@
+:root {
+  --acent-color: #4EE3C6;
+  --acent-color-dark: #145749;
+  --color-block: #68676D;
+  --color-info-text: #9F9E9E;
+  --color-block-dark: #1D1D1D;
+  --color-white: #FFFFFF;
+}
+.popup-fade:before {
+    content: "";
+    background: #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 101;
+  }
+  .popup-fade--1,
+  .popup-fade--2,
+  .popup-fade--3,
+  .popup-fade--4,
+  .popup-fade--5,
+  .popup-fade--6,
+  .popup-fade--7,
+  .popup-fade--8 {
+    display: none;
+  }
+  
+  .popupOne,
+  .popupTwo,
+  .popup-3,
+  .popup-4,
+  .popup-5,
+  .popup-6,
+  .popup-7,
+  .popup-8 {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    right: 0%;
+    bottom: 10%;
+    transform: translate(-12%, 2%);
+    opacity: 1;
+    z-index: 102;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE и Edge */
+    align-items: center;
+    justify-content: center;
+  }
+  /* Chrome, Safari и другие WebKit */
+  .popupTwo::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  
+  .popupBut {
+    position: absolute;
+    color: var(--acent-color-dark);
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    margin-left: auto;
+    top: 20px;
+    text-align: center;
+    z-index: 200;
+  }
+  .popupBut:hover {
+    color: var(--acent-color);
+    text-shadow: 0 0 30px var(--acent-color);
+  }
+  .popup__inner {
+    position: relative;
+    max-width: 980px;
+    width: 100%;
+    height: 568px;
+    border-radius: 0 20px 20px 0;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0;
+    align-items: center;
+    background-color: var(--color-white);
+    justify-content: flex-end;
+  }
+  .popup__img-block {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+  .popup__lupa {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    padding: 3px;
+    width: 26px;
+    height: 26px;
+    pointer-events: none;
+  }
+  .popup__lupa::after {
+    position: absolute;
+    content: '';
+    width: 100%; height: 100%;
+    top: 0; right: 0;
+    opacity: 0.7;
+    border-radius: 4px;
+    background-color: var(--color-white);
+    z-index: -1;
+  }
+  .popup__lupa img {
+    width: 20px;
+    height: 20px;
+  }
+  .popup__img-link {
+    position: absolute;
+    width: 230px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    box-shadow: 0 0 40px 10px var(--color-block-dark);
+    cursor: zoom-in;
+  }
+  .popup__img-link--big {
+    width: 500px;
+  }
+  .popup__img-link img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .popup__img-block a:nth-child(1) {
+    left: 0;
+    z-index: 3;
+  }
+
+  .popup__img-block a:nth-child(2) {
+    left: 15%;
+    z-index: 2;
+  }
+
+  .popup__img-block a:nth-child(3) {
+    left: 30%;
+    z-index: 1;
+  }
+.popup__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px 80px 50px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  text-align: right;
+  position: relative;
+}
+.popup__text-block {
+  width: max-content;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-left: auto;
+}
+.popup__link {
+  width: 100%;
+  padding-right: 18%;
+  box-shadow: none !important;
+  color: var(--acent-color-dark);
+}
+.popup__link:hover {
+  box-shadow: 0 0 30px 5px var(--acent-color) !important;
+  background-color: var(--acent-color);
+  color: var(--color-white);
+}
+.popup__link.link.visible {
+  width: 100%;
+  box-shadow: 0 0 30px 5px var(--acent-color);
+}
+.popup__title {
+  color: var(--acent-color-dark);
+  max-width: 300px;
+  text-align: center;
+}
+.popup__content p {
+  color: var(--color-block-dark);
+}
+
+/* слайдер фото */
+
+.fslightbox-slide-btn-container svg,
+.fslightbox-toolbar-button svg {
+  stroke: var(--acent-color);
+}
+@media (max-width: 1024px) {
+  .popup__inner {
+    flex-direction: column;
+    border-radius: 0 0 20px 20px;
+  }
+  .popup__img-block {
+    position: relative;
+    display: flex;
+    height: 800px;
+  }
+  .popup__content {
+    padding: 20px 0;
+  }
+  .popup__text-block {
+    width: 100%;
+    height: unset;
+    gap: 15px;
+  }
+  .popup__title {
+    max-width: unset;
+  }
+  .popup__img-link {
+    position: relative;
+    right: unset;
+  }
+  .popup__img-block a:nth-child(1) {
+    left: unset;
+  }
+  .popup__img-block a:nth-child(2) {
+    left: unset;
+  }
+  .popup__img-block a:nth-child(3) {
+    left: unset;
+  }
+  .popupBut {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popupBut::after {
+    position: absolute;
+    content: '';
+    width: 100%; height: 100%;
+    top: 0; right: 0;
+    opacity: 0.7;
+    border-radius: 4px;
+    background-color: var(--color-white);
+    z-index: -1;
+  }
+  .popup__link {
+    padding-right: unset;
+    padding: 15px 30px;
+    text-align: center;
+  }
+  .popup__img-link--big {
+    width: 100%;
+  }
+}

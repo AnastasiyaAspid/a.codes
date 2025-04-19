@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anastasiya Aspid</title>
+    <link rel="stylesheet" href="./assets/style/main.css" />
+    <link
+      rel="icon"
+      href="./assets/img/design/favicon.webp"
+      type="image/x-icon"
+    />
+
+    <!-- шрифт из заголовка -->
+    <link
+      href="https://db.onlinewebfonts.com/c/5155426ebc3a9cd2705ce2caff02e738?family=REM+SemiBold"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/d5ef58e040edd381b80081342f282af0?family=Zen+Dots+Regular"
+      rel="stylesheet"
+    />
+
+    <!-- основной шрифт -->
+    <link
+      href="https://db.onlinewebfonts.com/c/2f762aed94ab6dad361641ee2c899098?family=Istok+Web"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#me"> Обо мне </a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="#card"> Проекты </a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__link" href="#contacts"> Контакты </a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="hero" id="target">
+      <h1 class="visually-hidden">Anastasiya Aspid</h1>
+
+      <div class="hero__wrapper">
+        <img class="hero__img" src="./assets/img/design/ASPID.svg" alt="ASPID" />
+      </div>
+
+      <div class="hero__content">
+        <a class="link" target="_blank" href="https://t.me/AnastasiyaAspid">
+          <p>Обсудить проект</p>
+        </a>
+
+        <p class="hero__text">WEB-РАЗРАБОТКА</p>
+      </div>
+    </section>
+
+    <section class="me" id="me">
+      <div class="me__content">
+
+        <div class="me__wrapper container">
+          <h2 class="me__title title">Обо мне</h2>
+  
+          <p class="me__info">
+            Летним солнечным утром выходит эстонец на крыльцо своего дома и видит
+            под ногами улитку, поднимает её, смотрит и бросает в соседский сад.
+            Год спустя. Тот же эстонец выходит на то же крыльцо и видит под ногами
+            ту же самую улитку, поднимает её смотрит и бросая её в тот же
+            соседский сад говорит: — За#бала!!!
+          </p>
+
+        
+         <div class="me__scense-wrapper">
+
+          <div class="scene">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+  
+          <div class="me__text-block">
+
+            <p class="me__info">
+              <span class="me__marker"> 40 лет как под наркозом я работал говновозом: </span>
+            </p>
+
+            <p class="me__info"><span class="me__marker"> > </span>бипки бипки бипки бипки бипки бипки</p>
+  
+            <p class="me__info"><span class="me__marker"> > </span>бипки бипки</p>
+  
+            <p class="me__info"><span class="me__marker"> > </span>Гелик пирожочек</p>
+  
+            <p class="me__info"><span class="me__marker"> > </span>бипки бипки бипки бипки</p>
+  
+            <p class="me__info"><span class="me__marker"> > </span>хорохориться че за слово вообще</p>
+  
+            <p class="me__info">
+              <span class="me__marker"> > </span>хочется блинов
+            </p>
+          </div>
+
+          <div class="scene">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+
+         </div>
+
+
+        </div>
+  
+        <ul class="me__list">
+          <li class="me__item">
+            <p class="me__text">HTML5</p>
+          </li>
+  
+          <li class="me__item">
+            <p class="me__text">CSS</p>
+          </li>
+  
+          <li class="me__item">
+            <p class="me__text">SCSS</p>
+          </li>
+  
+          <li class="me__item">
+            <p class="me__text">JS</p>
+          </li>
+        </ul>
+
+      </div>
+      <div class="me__neon"></div>
+    </section>
+
+    <section class="card" id="card">
+      <div class="card__wrapper container">
+        <h2 class="title">Проекты</h2>
+
+        <ul class="card__list">
+          <li class="card__item">
+            <button onclick="openPopup()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-1/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+
+          <li class="card__item">
+            <button onclick="openPopup2()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-2/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+
+          <li class="card__item">
+            <button onclick="openPopup3()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-3/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+
+          <li class="card__item">
+            <button onclick="openPopup4()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-4/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+
+          <li class="card__item">
+            <button onclick="openPopup5()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-5/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+
+          <li class="card__item">
+            <button onclick="openPopup6()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-6/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+
+          <li class="card__item">
+            <button onclick="openPopup7()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-7/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+
+          <li class="card__item">
+            <button onclick="openPopup8()" class="card__btn" type="button">
+              <img
+                src="./assets/img/card-8/Desktop-1.webp"
+                width=""
+                height=""
+                alt="project"
+              />
+
+              <div class="card__btn-inner">
+                <h3 class="card__name">Открыть</h3>
+
+                <img
+                  src="./assets/img/design/cursor.svg"
+                  width="50"
+                  height="50"
+                  alt="lupa"
+                />
+
+                <p class="card__info">описание</p>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="contacts__werapper">
+        <h2 class="title">Контакты</h2>
+
+        <div class="contacts__content">
+          <a class="link" target="_blank" href="https://t.me/AnastasiyaAspid">
+            <p>Telegram</p>
+          </a>
+
+          <a class="link link--revers" target="_blank" href="mailto:krevedka.nana@yandex.ru">
+            <p>Mail</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+          <!-- Попапы -->
+          <div class="popup-fade popup-fade--1">
+            <div class="popupOne">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+
+                <div class="popup__img-block">
+                  <a class="popup__img-link" href="./assets/img/card-1/Desktop-1.webp" data-fslightbox="launch-img">
+                    <img src="./assets/img/card-1/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-1/Desktop-2.webp" data-fslightbox="launch-img">
+                    <img src="./assets/img/card-1/Desktop-2.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-1/Desktop-3.webp" data-fslightbox="launch-img">
+                    <img src="./assets/img/card-1/Desktop-3.webp" width="300" height="800" alt="project">
+                  </a>
+                 
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> Тишинский Бульвар </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project/"> Открыть сайт </a>
+                </div>
+              </div>
+            </div>
+    
+           
+          </div>
+
+          <div class="popup-fade popup-fade--2">
+            <div class="popupTwo">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup2()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+               
+                <div class="popup__img-block">
+                  <a class="popup__img-link" href="./assets/img/card-2/Desktop-1.webp" data-fslightbox="launch-img2">
+                    <img src="./assets/img/card-2/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-2/Desktop-2.webp" data-fslightbox="launch-img2">
+                    <img src="./assets/img/card-2/Desktop-2.webp" width="300" height="800" alt="project">
+                  </a>
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> HOUZZY </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project-2/"> Открыть сайт </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-fade popup-fade--3">
+            <div class="popup-3">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup3()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+               
+                <div class="popup__img-block">
+                  <a class="popup__img-link" href="./assets/img/card-3/Desktop-1.webp" data-fslightbox="launch-img3">
+                    <img src="./assets/img/card-3/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-3/Desktop-2.webp" data-fslightbox="launch-img3">
+                    <img src="./assets/img/card-3/Desktop-2.webp" width="300" height="800" alt="project">
+                  </a>
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> Sminex </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project-3/"> Открыть сайт </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-fade popup-fade--4">
+            <div class="popup-4">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup4()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+               
+                <div class="popup__img-block">
+                  <a class="popup__img-link" href="./assets/img/card-4/Desktop-1.webp" data-fslightbox="launch-img4">
+                    <img src="./assets/img/card-4/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-4/Desktop-2.webp" data-fslightbox="launch-img4">
+                    <img src="./assets/img/card-4/Desktop-2.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-4/Desktop-3.webp" data-fslightbox="launch-img4">
+                    <img src="./assets/img/card-4/Desktop-3.webp" width="300" height="800" alt="project">
+                  </a>
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> Газпромбанк </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project-4/"> Открыть сайт </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-fade popup-fade--5">
+            <div class="popup-5">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup5()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+               
+                <div class="popup__img-block">
+                  <a class="popup__img-link" href="./assets/img/card-5/Desktop-1.webp" data-fslightbox="launch-img5">
+                    <img src="./assets/img/card-5/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-5/Desktop-2.webp" data-fslightbox="launch-img5">
+                    <img src="./assets/img/card-5/Desktop-2.webp" width="300" height="800" alt="project">
+                  </a>
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> VALINABALI </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project-5/"> Открыть сайт </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-fade popup-fade--6">
+            <div class="popup-6">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup6()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+               
+                <div class="popup__img-block">
+                  <a class="popup__img-link" href="./assets/img/card-6/Desktop-1.webp" data-fslightbox="launch-img6">
+                    <img src="./assets/img/card-6/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-6/Desktop-2.webp" data-fslightbox="launch-img6">
+                    <img src="./assets/img/card-6/Desktop-2.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-6/Desktop-3.webp" data-fslightbox="launch-img6">
+                    <img src="./assets/img/card-6/Desktop-3.webp" width="300" height="800" alt="project">
+                  </a>
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> Sminex </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project-6/"> Открыть сайт </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-fade popup-fade--7">
+            <div class="popup-7">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup7()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+               
+                <div class="popup__img-block">
+                  <a class="popup__img-link" href="./assets/img/card-7/Desktop-1.webp" data-fslightbox="launch-img7">
+                    <img src="./assets/img/card-7/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-7/Desktop-2.webp" data-fslightbox="launch-img7">
+                    <img src="./assets/img/card-7/Desktop-2.webp" width="300" height="800" alt="project">
+                  </a>
+
+                  <a class="popup__img-link" href="./assets/img/card-7/Desktop-3.webp" data-fslightbox="launch-img7">
+                    <img src="./assets/img/card-7/Desktop-3.webp" width="300" height="800" alt="project">
+                  </a>
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> Газпромбанк </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project-7/"> Открыть сайт </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-fade popup-fade--8">
+            <div class="popup-8">
+              <div class="popup__inner">
+                <div class="popupBut" onclick="closePopup8()">✕</div>
+                <div class="popup__lupa">
+                  <img src="./assets/img/design/lupa.svg" width="20" height="20" alt="lupa">
+                </div>
+               
+                <div class="popup__img-block">
+                  <a class="popup__img-link popup__img-link--big" href="./assets/img/card-8/Desktop-1.webp" data-fslightbox="launch-img8">
+                    <img src="./assets/img/card-8/Desktop-1.webp" width="300" height="800" alt="project">
+                  </a>
+                </div>
+
+                <div class="popup__content">
+                 <div class="popup__text-block">
+                  <h2 class="popup__title title"> Sminex </h2>
+
+                  <p> Концепт проект </p>
+                 </div>
+
+                  <a class="popup__link link" target="_blank" href="https://anastasiyaaspid.github.io/my-project-8/"> Открыть сайт </a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+    <footer class="footer">
+      <p>2025</p>
+    </footer>
+
+        <!-- Экран загрузки -->
+        <div class="preloader" aria-hidden="true" role="status" data-js-preloader>
+          <div class="preloader__spinner" ria-label="Loading">
+
+            <span class="preloader__circle"></span>
+            <span class="preloader__circle"></span>
+            <span class="preloader__circle"></span>
+            
+            <span class="visually-hidden">
+              Загрузка
+            </span>
+          </div>
+        </div>
+
+
+    <script src="./assets/js/main.js" type="module" defer></script>
+    <script src="./assets/js/fslightbox.js"></script>
+    <script src="./assets/js/closePop.js"></script>
+    <script src="./assets/js/popUp.js"></script>
+    <script src="./assets/js/animation.js"></script>
+    <script src="./assets/js/animationCard.js"></script>
+    <script src="./assets/js/cursor.js"></script>
+  </body>
+</html>

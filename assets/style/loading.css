@@ -1,0 +1,63 @@
+:root {
+  --acent-color: #4EE3C6;
+  --acent-color-dark: #145749;
+  --color-block: #68676D;
+  --color-info-text: #9F9E9E;
+  --color-block-dark: #1D1D1D;
+  --color-white: #FFFFFF;
+}
+html.is-lock {
+    overflow: hidden;
+  }
+  .preloader.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  .preloader.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .preloader__spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .preloader__circle {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--acent-color);
+    box-shadow: 0 0 10px 5px var(--acent-color);
+    animation: preloader-bounce 1.4s infinite ease-in-out both;
+  }
+  .preloader__circle:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  .preloader__circle:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  @keyframes preloader-bounce {
+    0%,
+    80%,
+    100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
